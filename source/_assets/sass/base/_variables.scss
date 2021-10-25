@@ -1,0 +1,97 @@
+// ---------------------------------------------------------===
+// Variables
+// ---------------------------------------------------------===
+
+// Colors
+$colors: (
+  blue: (
+    1: #619ecb,
+    2: #1F3A48,
+    3: #3B718E,
+    4: #1A73E8,
+    5: #4b77e9,
+    6: #123B49,
+  ),
+    black: (
+    1: #000,
+    2: #282828,
+  ),
+  white: (
+    1: #fff,
+    2: #E5E5E5,
+    3: #f3f3f3,
+    4: #ECECE7,
+    5: #F4F4F4,
+  ),
+  red: (
+    1: #FC5400,
+    2: #FF6123,
+  ),
+  gray: (
+    1: #C4C4C4,
+    2: #676E74,
+    3: #e4e4e0,
+    4: #f0f0ec,
+  )
+);
+
+$white: color(white);
+$black: color(black);
+$red: color(red);
+
+$dir: '/assets';
+$font-path: '#{$dir}/fonts';
+$image-path: '#{$dir}/images';
+
+$soehne: 'soehne', 'Arial', 'Helvetica', sans-serif;
+$base-font-sans-serif: $soehne;
+$base-font-serif: 'Times New Roman', 'Times', 'Baskerville', 'Georgia', serif;
+
+// Body
+$base-text-color: rgba(color(black), 0.6) !default;
+$base-background-color: $white !default;
+$font-size-base: 20px !default;
+$line-height-base: 1.4 !default;
+$base-font-family: $base-font-sans-serif !default;
+
+$vertical-rhythm: ($line-height-base * 1em);
+
+$base-min-width: 320px;
+
+// Liks
+$base-link-color: $black;
+
+// Buttons
+$btn-color: $white !default;
+$btn-background: $black !default;
+$btn-padding: 0.4em 0.7em !default;
+$btn-font-size: inherit !default;
+
+// Headers
+$h1-font-size: 56px !default;
+$h2-font-size: 48px !default;
+$h3-font-size: 32px !default;
+$h4-font-size: 28px !default;
+$h5-font-size: 24px !default;
+$h6-font-size: 15px !default;
+
+$headings-font-family: inherit !default;
+$headings-color: color(black) !default;
+
+
+$animation-speed: 0.3s;
+
+// nice select
+$niceSelect: false;
+$niceCheckRadio: true;
+
+// grid
+$usegrid: true;
+$grid-count: 12;
+$grid-gutter: 40px;
+$container-width: 1200px;
+// $grid-gutter-mobile: 20px;  // Define if the mobile gutter is different
+// $container-gutter: 40px; // Define if the container gutter is different than grid gutter
+
+$easeAppearIn: cubic-bezier(.215,.61,.355,1);
+$animation-speed: 0.3s;

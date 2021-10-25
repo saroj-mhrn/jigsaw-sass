@@ -1,0 +1,34 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "mix && npm run lambda-serve",
+        "watch": "mix watch",
+        "staging": "NODE_ENV=staging mix",
+        "prod": "mix --production && npm run lambda-build",
+        "lambda-serve": "netlify-lambda serve lambda-src",
+        "lambda-build": "netlify-lambda build lambda-src",
+        "format": "prettier --write 'source/_assets/**/*.js' 'lambda-src/**/*.js' webpack.mix.js"
+    },
+    "devDependencies": {
+        "concurrently": "^6.2.0",
+        "dotenv": "^10.0.0",
+        "imagemin-webp-webpack-plugin": "^3.3.6",
+        "jimp": "^0.16.1",
+        "jquery": "^3.3.1",
+        "laravel-mix": "^6.0.10",
+        "laravel-mix-jigsaw": "^1.5.0",
+        "laravel-mix-webp": "^0.1.1",
+        "netlify-lambda": "^2.0.11",
+        "prettier": "^2.3.2",
+        "responsive-loader": "^2.3.0",
+        "sass": "^1.35.2",
+        "sass-loader": "^12.1.0",
+        "stripe": "^8.163.0",
+        "uuid": "^3.4.0"
+    },
+    "dependencies": {
+        "animejs": "^3.2.1",
+        "jquery-validation": "^1.19.3",
+        "mailchimp-api-v3": "^1.15.0"
+    }
+}

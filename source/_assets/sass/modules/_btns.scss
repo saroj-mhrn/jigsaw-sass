@@ -1,0 +1,74 @@
+// ---------------------------------------------------------===
+// Buttons styles
+// ---------------------------------------------------------===
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  border: 2px solid $white;
+  color: $white;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 5px 36px;
+  outline: none;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  @include animate(background-color border-color color);
+
+  &.has-arrow {
+    padding: 5px 52px 5px 23px;
+    position: relative;
+    
+    @include media('<desktop') {
+      padding: 4px 44px 4px 24px;
+    }
+
+    &:after {
+      content: '\e904';
+      font: 18px/1 icomoon;
+      color: $red;
+      position: absolute;
+      right: 15px;
+      @include box-align(vc);
+      
+      @include media('<desktop') {
+        font-size: 17px;
+        right: 13px;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+
+  &-black-hollow {
+    border-color: $black;
+    color: $black;
+
+    &:hover {
+      background: $black;
+      color: $white;
+    }
+  }
+
+  &-black {
+    color: $white;
+    border-color: $black;
+    background-color: $black;
+  }
+
+  &-white {
+    color: $black;
+    border-color: $white;
+    background-color: $white;
+
+    &:hover {
+      background: transparent;
+      color: $white;
+    }
+  }
+}
